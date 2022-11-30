@@ -4,23 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activity.RegisterActivity">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/mainToolbar"
+        android:id="@+id/registerToolbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         style="@style/mainToolbar" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/dataContainer"
+        android:id="@+id/registerDataContainer"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mainToolbar" />
+        app:layout_constraintTop_toBottomOf="@+id/registerToolbar" />
 
 
 

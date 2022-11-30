@@ -22,7 +22,6 @@
             android:layout_height="@dimen/setting_user_photo_height"
             android:src="@drawable/default_photo"
             app:civ_border_color="#FF000000"
-            app:civ_border_width="@dimen/setting_user_photo_border"
             app:civ_circle_background_color="@color/colorAccent"
             android:layout_marginStart="@dimen/horizontal_margin"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -152,5 +151,28 @@
             app:layout_constraintTop_toBottomOf="@+id/settings_label_bio" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/setting_change_photo"
+        android:layout_width="@dimen/setting_user_photo_width"
+        android:layout_height="@dimen/setting_user_photo_height"
+        android:src="@drawable/ic_camera"
+        app:civ_border_color="#FF000000"
+        android:elevation="4dp"
+        android:layout_marginEnd="8sp"
+        app:civ_circle_background_color="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="@+id/setting_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setting_header" />
+
+    <!--<TextView
+        android:id="@+id/setting_text_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/setting_text_account"
+        android:textSize="@dimen/normalText"
+        app:layout_constraintTop_toBottomOf="@+id/setting_header"
+        android:layout_marginStart="@dimen/horizontal_margin"
+        android:layout_marginTop="@dimen/vertical_large_margin"/>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
