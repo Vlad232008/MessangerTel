@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">MessangerTel</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="setting_default_username">Vlad Rogachev</string>
+    <string name="setting_default_status">В сети</string>
+    <string name="setting_text_account">Аккаунт</string>
+    <string name="setting_default_number">+79146552409</string>
+    <string name="settings_label_phone_number">Нажмите, чтобы изменить номер телефона</string>
+    <string name="setting_default_login">WhatIsLove</string>
+    <string name="setting_label_login">Имя пользователя</string>
+    <string name="setting_default_bio">О себе</string>
+    <string name="setting_label_bio">Напишите немного о себе</string>
 </resources>
