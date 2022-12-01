@@ -9,6 +9,8 @@ import com.example.messangertel.activity.RegisterActivity
 import com.example.messangertel.databinding.ActivityMainBinding
 import com.example.messangertel.ui.fragments.ChatsFragment
 import com.example.messangertel.ui.objects.AppDrawer
+import com.example.messangertel.utilits.replaceActivity
+import com.example.messangertel.utilits.replaceFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,21 +30,18 @@ class MainActivity : AppCompatActivity() {
         initFunc()
     }
 
-    private fun initFields(){
+    private fun initFields() {
         mToolbar = mBinding.mainToolbar
         mAppDrawer = AppDrawer(this, mToolbar)
     }
 
-    private fun initFunc(){
-        if (false) {
+    private fun initFunc() {
+        if (true) {
             setSupportActionBar(mToolbar)
             mAppDrawer.create()
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.dataContainer, ChatsFragment()).commit()
-        }
-        else {
-            val intent = Intent (this, RegisterActivity::class.java)
-            startActivity(intent)
+            replaceFragment(ChatsFragment())
+        } else {
+            replaceActivity(RegisterActivity())
         }
     }
 }

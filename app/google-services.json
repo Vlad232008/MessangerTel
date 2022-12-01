@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "544855237644",
+    "project_id": "messangertel",
+    "storage_bucket": "messangertel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544855237644:android:f4861ec1f7b64f5557fa29",
+        "android_client_info": {
+          "package_name": "com.example.messangertel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "544855237644-f0o3g5tt3d4glpm73sj6hq1b2n8kmplh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJzSuZsOur7U9P1e2aqnW74jxjHHFhjYQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "544855237644-f0o3g5tt3d4glpm73sj6hq1b2n8kmplh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

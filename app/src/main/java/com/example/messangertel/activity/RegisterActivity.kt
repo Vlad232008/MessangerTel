@@ -7,6 +7,7 @@ import com.example.messangertel.R
 
 import com.example.messangertel.databinding.ActivityRegisterBinding
 import com.example.messangertel.ui.fragments.EnterPhoneNumberFragment
+import com.example.messangertel.utilits.replaceFragment
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -24,8 +25,6 @@ class RegisterActivity : AppCompatActivity() {
         mToolbar = mBinding.registerToolbar
         setSupportActionBar(mToolbar)
         title = "Ваш телефон"
-        supportFragmentManager.beginTransaction()
-            .add(R.id.registerDataContainer,EnterPhoneNumberFragment())
-            .commit()
+        replaceFragment(EnterPhoneNumberFragment())
     }
 }

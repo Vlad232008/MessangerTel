@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import com.example.messangertel.R
 import com.example.messangertel.ui.fragments.SettingFragment
+import com.example.messangertel.utilits.replaceActivity
+import com.example.messangertel.utilits.replaceFragment
 import com.mikepenz.materialdrawer.AccountHeader
 import com.mikepenz.materialdrawer.AccountHeaderBuilder
 import com.mikepenz.materialdrawer.Drawer
@@ -93,9 +95,7 @@ class AppDrawer(val mainActivity: AppCompatActivity, val toolbar: Toolbar) {
                     drawerItem: IDrawerItem<*>
                 ): Boolean {
                     when(position){
-                        7 -> mainActivity.supportFragmentManager.beginTransaction()
-                            .addToBackStack(null)
-                            .replace(R.id.dataContainer, SettingFragment()).commit()
+                        7 -> mainActivity.replaceFragment(SettingFragment())
                     }
                     return false
                 }
