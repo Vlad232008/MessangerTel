@@ -58,7 +58,7 @@
         android:id="@+id/register_input_code"
         style="@style/editText"
         android:gravity="center"
-        android:maxLength="5"
+        android:maxLength="6"
         android:textColorHint="@color/colorGray"
         android:hint="@string/register_hint_default_code"
         app:layout_constraintEnd_toEndOf="parent"

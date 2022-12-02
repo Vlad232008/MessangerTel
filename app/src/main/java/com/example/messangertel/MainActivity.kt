@@ -9,8 +9,10 @@ import com.example.messangertel.activity.RegisterActivity
 import com.example.messangertel.databinding.ActivityMainBinding
 import com.example.messangertel.ui.fragments.ChatsFragment
 import com.example.messangertel.ui.objects.AppDrawer
+import com.example.messangertel.utilits.AUTH
 import com.example.messangertel.utilits.replaceActivity
 import com.example.messangertel.utilits.replaceFragment
+import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
 
@@ -33,13 +35,14 @@ class MainActivity : AppCompatActivity() {
     private fun initFields() {
         mToolbar = mBinding.mainToolbar
         mAppDrawer = AppDrawer(this, mToolbar)
+        AUTH = FirebaseAuth.getInstance()
     }
 
     private fun initFunc() {
-        if (true) {
+        if (AUTH.currentUser != null) {
             setSupportActionBar(mToolbar)
             mAppDrawer.create()
-            replaceFragment(ChatsFragment())
+            replaceFragment(ChatsFragment(), false)
         } else {
             replaceActivity(RegisterActivity())
         }

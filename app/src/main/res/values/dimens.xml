@@ -18,6 +18,6 @@
 
     <dimen name="setting_user_photo_border">2dp</dimen>
     <dimen name="setting_repple_effect_radius">4dp</dimen>
-    <dimen name="appPadding">5dp</dimen>
+    <dimen name="appPadding">10dp</dimen>
 
 </resources>

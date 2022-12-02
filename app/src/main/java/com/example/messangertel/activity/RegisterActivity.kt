@@ -25,6 +25,6 @@ class RegisterActivity : AppCompatActivity() {
         mToolbar = mBinding.registerToolbar
         setSupportActionBar(mToolbar)
         title = "Ваш телефон"
-        replaceFragment(EnterPhoneNumberFragment())
+        replaceFragment(EnterPhoneNumberFragment(),false)
     }
 }

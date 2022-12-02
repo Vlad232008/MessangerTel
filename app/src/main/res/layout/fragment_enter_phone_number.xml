@@ -12,7 +12,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:hint="Введите номер телефона"
         android:textColorHint="@color/colorGray"
-        android:maxLength="11"
+        android:maxLength="12"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
 
